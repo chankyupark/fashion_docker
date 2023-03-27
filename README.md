@@ -51,21 +51,21 @@ This topic publishes a string which contains all the recognition results. The st
   "t_gender": "woman",
   "t_season": "spring",
   "t_type": "t-shirt",
-  "t_sleeves": "long-sleeves"
-  "t_texture": "normal"
-  "t_button": "none"
-  "t_length": "medium"
-  "t_fit": "slim"
-  "t_collar": "round-neck"
-  "b_color" : "black"
+  "t_sleeves": "long-sleeves",
+  "t_texture": "normal",
+  "t_button": "none",
+  "t_length": "medium",
+  "t_fit": "slim",
+  "t_collar": "round-neck",
+  "b_color" : "black",
   "b_pattern": "plain",
   "b_gender": "woman",
   "b_season": "spring",
-  "b_length": "long"
+  "b_length": "long",
   "b_type": "pants",
-  "b_legpose": "standing"
-  "gender": "woman"
-  "glasses": "sun-glasses"
+  "b_legpose": "standing",
+  "gender": "woman",
+  "glasses": "sun-glasses",
   "style": "casual"
 }
 ```
