@@ -1,9 +1,8 @@
 # fashion_docker
-# loom
 
 ## Introduction
 
-``loom`` continuously collects all the peprcepts, synchronizes them and publishes an integrated percept message.
+``fashion_docker`` can clcontinuously collects all the peprcepts, synchronizes them and publishes an integrated percept message.
 
 This container interfaces with clients via ROS2 topics.
 
