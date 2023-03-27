@@ -8,20 +8,20 @@ This container interfaces with clients via ROS2 topics.
 
 ## Folders and Files
 
-- ``loom-ros2``: An implementation of a ROS2 node for ``loom``
-- ``loom_aai4r.Dockerfile``: A dockerfile for creating a ``loom`` container image
-- ``dockerbuild_loom.sh``: A shell script for creating a container image with the ``loom_aai4r.Dockerfile`` and tagging it properly
+- ``fashion_att_pkg``: An implementation of a ROS2 node for ``fashion_docker``
+- ``fashion2_aai4r.Dockerfile``: A dockerfile for creating a ``fashion_docker`` container image
+- ``dockerbuild.sh``: A shell script for creating a container image with the ``fashion2_aai4r.Dockerfile`` and tagging it properly
 - ``ros_entrypoint.sh``: An entrypoint shell script for the container
 - ``run_colcon.sh``: A shell script to build the ROS2 node inside the container
-- ``run_container_loom.sh``: A shell script to create a container and execute
-- ``run_loom.sh``: A shell script to run the ROS2 node inside the container
+- ``run_container.sh``: A shell script to create a container and execute
+- ``run.sh``: A shell script to run the ROS2 node inside the container
 
 ## Instructions
 
 To create a docker container:
 
 ```
-dockerbuild_loom.sh
+dockerbuild.sh
 ```
 
 To create and run a ``loom`` container:
