@@ -24,10 +24,10 @@ To create a docker container:
 dockerbuild.sh
 ```
 
-To create and run a ``loom`` container:
+To create and run a ``fashion_docker`` container:
 
 ```
-run_container_loom.sh
+run_container.sh
 ```
 
 ## ROS2 Interface
@@ -36,42 +36,42 @@ run_container_loom.sh
 
 #### ``/camera/robot_image_info`` ([RobotImageInfo](https://github.com/aai4r/ai-containers/blob/main/aai4r_edge_interfaces/msg/RobotImageInfo.msg))
 
-#### ``/aai4r/detrack`` ([std_msgs/String](https://github.com/ros2/common_interfaces/blob/humble/std_msgs/msg/String.msg))
-
-#### ``/aai4r/facial`` ([std_msgs/String](https://github.com/ros2/common_interfaces/blob/humble/std_msgs/msg/String.msg))
-
-#### ``/aai4r/meal`` ([std_msgs/String](https://github.com/ros2/common_interfaces/blob/humble/std_msgs/msg/String.msg))
-
-#### ``/aai4r/hhobjects`` ([std_msgs/String](https://github.com/ros2/common_interfaces/blob/humble/std_msgs/msg/String.msg))
-
 
 ### Published Topics
 
-#### ``/aai4r/situation`` ([std_msgs/String](https://github.com/ros2/common_interfaces/blob/humble/std_msgs/msg/String.msg))
+#### ``/aai4r/fashion`` ([std_msgs/String](https://github.com/ros2/common_interfaces/blob/humble/std_msgs/msg/String.msg))
 
-This topic publishes a string which contains all the detection and recognition results. The string is formatted in ``JSON`` and the content is structured as the following sample:
+This topic publishes a string which contains all the recognition results. The string is formatted in ``JSON`` and the content is structured as the following sample:
 
 ```json
 {
-  "domain": 1, 
-  "robot_id": "robot01", 
-  "robot_type": 1, 
-  "zone": 2, 
-  "time": "2021-05-16T23:07:42", 
-  "distance": -1, 
-  "situation": {}, 
-  "group": {}, 
-  "personal_context": [
-    {"id": "2ae1090a-4f16-4843-9029-20e6641f0b61", "mask": 1, "has_cup": 1}, ...
-  ],
-  "meal_context": [
-    {"category": "food", "name": "pasta", "amount": 0.2}, ...
-  ]
+  "id": 1, 
+  "t_color": "green", 
+  "t_pattern": "checker",
+  "t_gender": "woman",
+  "t_season": "spring",
+  "t_type": "t-shirt",
+  "t_sleeves": "long-sleeves"
+  "t_texture": "normal"
+  "t_button": "none"
+  "t_length": "medium"
+  "t_fit": "slim"
+  "t_collar": "round-neck"
+  "b_color" : "black"
+  "b_pattern": "plain",
+  "b_gender": "woman",
+  "b_season": "spring",
+  "b_length": "long"
+  "b_type": "pants",
+  "b_legpose": "standing"
+  "gender": "woman"
+  "glasses": "sun-glasses"
+  "style": "casual"
 }
 ```
 
-#### ``/aai4r/loom/monitor`` ([sensor_msgs/Image](https://github.com/ros2/common_interfaces/blob/humble/sensor_msgs/msg/Image.msg))
+#### ``/aai4r/fashion/monitor`` ([sensor_msgs/Image](https://github.com/ros2/common_interfaces/blob/humble/sensor_msgs/msg/Image.msg))
 
 
-This topic publishes an image containing visualizations of the detections and recognitions predicted by ``facial``.
+This topic publishes an image containing visualizations of the recognitions predicted by ``fashion_docker``.
 
