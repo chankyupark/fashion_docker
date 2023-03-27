@@ -2,7 +2,7 @@
 
 ## Introduction
 
-``fashion_docker`` can clcontinuously collects all the peprcepts, synchronizes them and publishes an integrated percept message.
+Given a person-level ROI as input, ``face_docker`` can classify multiple attributes about the clothing and accessories a person is wearing.
 
 This container interfaces with clients via ROS2 topics.
 
