@@ -76,4 +76,4 @@ This topic publishes a string which contains all the recognition results. The st
 This topic publishes an image containing visualizations of the recognitions predicted by ``fashion_docker``.
 
 ## Clothing multi-attributes definition
-<img src="f_attributes.png" width="50%" height="50%" title="px(픽셀) 크기 설정" alt="Demo_image"></img>
+<img src="f_attributes.png" width="80%" height="80%" title="px(픽셀) 크기 설정" alt="Demo_image"></img>
