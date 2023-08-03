@@ -1,4 +1,4 @@
 #!/usr/bin/bash
-
-python3 gdrivedl.py https://drive.google.com/file/d/1yCz6pc6qHJD2Zcz8ldDmJ3NzE8wjaiT6 -P fashion_att_pkg/fashion_attribute/cfg
-python3 gdrivedl.py https://drive.google.com/file/d/1oM-KrNIklN4uK14XkxGqlYcSLKKYqv7C -P fashion_att_pkg/fashion_attribute/cfg
+/view?usp=sharing
+python3 gdrivedl.py https://drive.google.com/file/d/1hu3F7Ly1rEbk8L8OZCeVgZba-IYrPKXB -P fashion_att_pkg/fashion_attribute/cfg
+python3 gdrivedl.py https://drive.google.com/file/d/1kD12GEZw6nRYaqO9-1m8dairpX89z5VE -P fashion_att_pkg/fashion_attribute/cfg
